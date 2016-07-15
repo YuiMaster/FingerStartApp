@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/key_root"
+    android:title="@string/str_title" >
+
+    <PreferenceCategory android:title="@string/security_settings_fp_function_preference_title" >
+
+        <CheckBoxPreference
+            android:disableDependentsState="true"
+            android:key="@string/key_fp_shot"
+            android:title="@string/fp_function_shot" />
+
+        <CheckBoxPreference
+            android:disableDependentsState="true"
+            android:key="@string/key_fp_call"
+            android:title="@string/fp_function_hangon" />
+
+        <!-- 
+        <Preference
+            android:disableDependentsState="true"
+            android:key="@string/key_fp_shortcut"
+            android:title="@string/fp_function_shotcut" />
+         -->
+        <Preference
+            android:disableDependentsState="true"
+            android:key="@string/key_fp_applock"
+            android:title="@string/fp_function_applock" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/str_fingerprint" >
+    </PreferenceCategory>
+
+<!--     <PreferenceScreen android:key="@string/key_fingerprint_list" /> -->
+
+</PreferenceScreen>

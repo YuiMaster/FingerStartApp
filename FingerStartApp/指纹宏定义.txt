@@ -1,0 +1,50 @@
+JAVA宏：ro.wos_fp3_enable
+mk文件宏：WOS_APP_FP3
+注释格式：
+<!-- A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 begin -->
+<!-- A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 end -->
+//A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 begin
+//A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 end
+#A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 begin
+#A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 end
+
+
+./device/mediatek/common/device.mk:2540:
+ro.wos_fp3_enable
+WOS_APP_FP3
+private static final boolean WOS_APP_FP3 = android.os.SystemProperties.get("ro.wos_app_fp3").equals("1");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+./ginreen/E281L/ProjectConfig.mk:1:
+#A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 add 
+WOS_APP_FP3AUTO_ADD_GLOBAL_DEFINE_BY_NAME= WOS_APP_FP3 MTK_SLC_BUFFER_SUPPORT WIND_OTG_REVERSE_CHARGING WIND_DEF_PRO_E281L WIND_DEF_OPTR_E281L_WW WIND_ASUS_MOBI_MANAGER_ENABLE WIND_DEF_ASUS_SAVELOG WIND_DEF_ISN_SSN_FROM_BARCODE WIND_DEF_COLORID_FROM_BARCODE WIND_DEF_CC_CID_FROM_BARCODE WIND_DEF_AUDIOWIZARD WIND_DEF_ASUS_CAMERA WIND_DEF_GOOGLE_VOUCHER_KEY
+
+./ginreen/E281L/ProjectConfig.mk:725:
+#A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 begin
+WOS_APP_FP3 = yes
+#A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 end
+
+
+./mediatek/common/device.mk:
+#A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 begin
+ifeq ($(WOS_APP_FP3),yes)
+    PRODUCT_PACKAGES += WOSAppLock
+    PRODUCT_PROPERTY_OVERRIDES += ro.wos_app_fp3=1
+else
+    PRODUCT_PROPERTY_OVERRIDES += ro.wos_app_fp3=0
+endif
+#A:WOS WOSFP3 liaoyuhuan@wind-mobi.com 060622 end

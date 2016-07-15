@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBoxPreference
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="key_fp_function_shot"
+        android:title="@string/fp_function_shot">
+
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="key_fp_function_hangon"
+        android:title="@string/fp_function_hangon">
+
+    </CheckBoxPreference>
+
+    <Preference
+        android:key="key_fp_function_shotcut"
+        android:title="@string/fp_function_shotcut">
+
+        <!--
+        <intent
+            android:action="com.feixun.action.seemAction"
+            android:targetClass="com.feixun.qin.MainActivity"
+            android:targetPackage="com.feixun.qin" />
+            -->
+    </Preference>
+
+
+    <Preference
+        android:key="key_fp_function_applock"
+        android:title="@string/fp_function_applock">
+
+    </Preference>
+    <!-- 
+    <Preference
+        android:key="key_fp_function_direction_key"
+        android:title="@string/fp_function_direction_key">
+
+    </Preference>
+     -->
+</PreferenceScreen>

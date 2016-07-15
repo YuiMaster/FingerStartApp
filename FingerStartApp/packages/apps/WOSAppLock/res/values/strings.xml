@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Lock</string>
+    
+    <!-- don't transform  begin-->
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="null_string"></string>
+    <string name="fp_fingerprint_emptystr">  </string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    
+    <!-- unuse -->
+    <string name="kg_wrong_pin">kg_wrong_pin</string>
+    
+    <!-- add for contentdescription-->
+    <string name="keyguard_accessibility_pin_unlock">keyguard_accessibility_pin_unlock</string>
+    <string name="keyguard_accessibility_pin_area">keyguard_accessibility_pin_area</string>
+    <string name="keyboardview_keycode_delete">keyboardview_keycode_delete</string>
+    <string name="keyboardview_keycode_enter">keyboardview_keycode_enter</string>
+    <string name="keyguard_accessibility_password_unlock">keyguard_accessibility_password_unlock</string>
+    <string name="accessibility_ime_switch_button">accessibility_ime_switch_button</string>
+    <!-- don't transform  end-->
+    
+    <string name="enter_pwd">input password</string>
+    <string name="fp_password_not_match">password not match</string>
+    <string name="fp_password_too_short">password too short</string>
+    <string name="fp_password_not_the_same">password not the same</string>
+    
+    <string name="fp_fingerprint_not_match">fingerprint not match</string>
+    <string name="fp_wrong_pattern">pattern not match</string>
+    <string name="fp_wrong_pin">pin not match</string>
+    <string name="fp_too_many_failed_attempts_countdown">too many failed attempts</string>
+    
+    <string name="kg_wrong_password">password not match</string>
+
+</resources>

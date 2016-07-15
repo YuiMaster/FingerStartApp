@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wind.applock.passwd.KeyguardPasswordView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/keyguard_password_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    androidprv:layout_maxHeight="@dimen/keyguard_security_height"
+    androidprv:layout_maxWidth="@dimen/keyguard_security_width"
+    android:contentDescription="@string/keyguard_accessibility_password_unlock"
+    android:orientation="vertical" >
+
+<!--     android:gravity="bottom" -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/keyguard_message_area" />
+
+    <!--
+    -->
+    <!-- Password entry field -->
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/PasswordTheme" >
+
+        <EditText
+            android:id="@+id/passwordEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:imeOptions="flagForceAscii|actionDone"
+            android:inputType="textPassword"
+            android:maxLength="500"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:textStyle="normal" >
+            </EditText>
+
+        <ImageView
+            android:id="@+id/switch_ime_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/accessibility_ime_switch_button"
+            android:padding="8dip"
+            android:src="@drawable/ic_lockscreen_ime"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <!--
+    <include layout="@layout/keyguard_eca"
+             android:id="@+id/keyguard_selector_fade_container"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="12dp"
+             android:orientation="vertical"
+             android:layout_gravity="bottom|center_horizontal"
+             android:gravity="center_horizontal" />
+    -->
+
+</com.wind.applock.passwd.KeyguardPasswordView>
